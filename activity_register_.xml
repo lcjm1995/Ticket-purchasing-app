@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.androidbootcamp.finalappdesign.Register_Activity">
+
+    <TextView
+        android:id="@+id/TVregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Please enter your credentials below:"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/ETuserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/ETname"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ETname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ETuserEmail"
+        android:layout_below="@+id/TVregister"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ETpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/ETuserEmail"
+        android:layout_alignStart="@+id/ETuserEmail" />
+
+    <EditText
+        android:id="@+id/ETage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ETpassword"
+        android:layout_below="@+id/ETpassword"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="age"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Bregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="Confirm" />
+
+</RelativeLayout>
